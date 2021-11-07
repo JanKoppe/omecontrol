@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  ome:
+    image: airensoft/ovenmediaengine:0.12.8
+    network_mode: host
+    volumes:
+    - ./Server.xml:/opt/ovenmediaengine/bin/origin_conf/Server.xml:ro
